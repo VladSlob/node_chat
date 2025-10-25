@@ -18,10 +18,6 @@ app.use('/user', userRoute);
 app.use('/rooms', roomsRoute);
 app.use(messageRoute);
 
-const server = app.listen(PORT, () => {
-  // eslint-disable-next-line no-console
-  console.log(`Server was started on ${PORT}`);
-});
 
 const wss = new WebSocketServer({ server });
 
